@@ -94,13 +94,13 @@ class ProductServiceTest {
     }
 
     private Product createProduct(String productNumber, ProductType type, ProductSellingStatus sellingStatus, String name, int price) {
-        Product product1 = Product.builder()
+        Product product = Product.builder()
                 .productNumber(productNumber)
                 .type(type)
                 .sellingStatus(sellingStatus)
                 .name(name)
                 .price(price)
                 .build();
-        return product1;
+        return product;
     }
 }
